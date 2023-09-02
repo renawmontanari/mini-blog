@@ -46,7 +46,7 @@ const CreatePost = () => {
       body,
       tagsArray,
       uid: user.uid,
-      createdBy: user.displayName
+      createdBy: user.displayName,
     });
 
     // Redirecionar para a página Home
