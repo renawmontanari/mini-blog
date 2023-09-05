@@ -18,10 +18,12 @@ import Login from './pages/Login/Login';
 import Register from './pages/Register/Register';
 import CreatePost from './pages/CreatePost/CreatePost';
 import Dashboard from './pages/Dashboard/Dashboard';
+import Search from './pages/Search/Search';
 
 // Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+
 
 function App() {
 
@@ -56,6 +58,10 @@ function App() {
               <Route 
                 path='/about' 
                 element={<About />} 
+              />
+              <Route 
+                path='/search' 
+                element={<Search />} 
               />
               <Route 
                 path='/login' 

@@ -23,7 +23,7 @@ const Home = () => {
     if (query) {
       return navigate(`/search?q=${query}`);
     }
-  }
+  };
 
   return (
     <div className={styles.home}>
