@@ -22,7 +22,7 @@ const Dashboard = () => {
   }
 
   return (
-    <div>
+    <div className={styles.dashboard}>
         <h2>Dashboard</h2>
         <p>Gerencie os seus posts</p>
         {posts && posts.length === 0 ? (
@@ -35,19 +35,19 @@ const Dashboard = () => {
 
         ) : (
           <>
-            <div>
+            <div className={styles.post__header}>
               <span>Título</span>
               <span>Ações</span>
             </div>
             
             {posts && posts.map((post) =>
-              <div key={post.id}>
+              <div key={post.id} className={styles.post__row}>
                 <p>{post.title}</p>
                 <div>
                   <Link to={`/posts/${post.id}`} className="btn btn__outline">
                     Ver
                   </Link>
-                  <Link to={`/posts/edit/${post.id}`} className="btn btn__dark">
+                  <Link to={`/posts/edit/${post.id}`} className="btn btn__outline">
                     Editar
                   </Link>
                   <button onClick={() => deleteDocument(post.id)} className="btn btn__outline btn__danger">
