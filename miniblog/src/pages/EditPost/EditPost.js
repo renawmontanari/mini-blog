@@ -68,7 +68,7 @@ const EditPost = () => {
         createdBy: user.displayName,
     }
 
-    updateDocument(id, data);
+    updateDocument(id, data);  
 
     // Redirecionar para a página Home
     navigate("/dashboard");
